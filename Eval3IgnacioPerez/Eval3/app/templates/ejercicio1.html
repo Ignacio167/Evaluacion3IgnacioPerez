@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="/static/css/Ej1.css"/>
+</head>
+<body>
+<form method="POST">
+    <h2>Formulario de Notas</h2>
+    <p><label for="nota1">Nota 1:</label><br>
+        <input type="number" id="nota1" name="nota1" min="10" max="70" ></p>
+
+    <label for="nota2">Nota 2:</label><br>
+    <p><input type="number" id="nota2" name="nota2" min="10" max="70"></p>
+
+    <p><label for="nota3">Nota 3:</label><br>
+    <input type="number" id="nota3" name="nota3" min="10" max="70"></p>
+
+    <label for="asistencia">Asistencia (%):</label><br>
+    <input type="number" id="asistencia" name="asistencia" min="0" max="100"><br>
+
+    <p><input type="submit" id="enviar" value="Enviar"></p>
+</form>
+{% if promedio and estado %}
+             {{promedio}}<br>
+             {{estado}}
+{% endif %}
+
+
+</body>
+</html>

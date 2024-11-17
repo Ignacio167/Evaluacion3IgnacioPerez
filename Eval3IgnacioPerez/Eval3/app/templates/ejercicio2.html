@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="/static/css/Ej2.css"/>
+</head>
+<body>
+<form method="POST">
+    <p><label for="nombre1">Nombre 1: </label> <br>
+      <input type="text" id="nombre1" name="nombre1"></p>
+
+    <p><label for="nombre2">Nombre 2: </label> <br>
+      <input type="text" id="nombre2" name="nombre2"></p>
+
+    <p><label for="nombre3">Nombre 3: </label> <br>
+      <input type="text" id="nombre3" name="nombre3"></p>
+
+    <p><input type="submit" id="enviar" value="Enviar"></p>
+</form>
+{% if nombre and largo %}
+    El nombre con mayor cantidad de caracteres es: {{nombre}}<br>
+    El nombre tiene : {{largo}} caracteres
+{% endif %}
+
+</body>
+</html>
